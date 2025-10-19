@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talorix Bold - energía y vitalidad | México</title>
+  <meta name="description" content="Fórmula avanzada en gotas que combina extractos naturales para revitalizar tu energía masculina. Talorix Bold trabaja en sinergia con tu cuerpo para mejora">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #2d3748;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: white;
+    }
+
+    .emoji-header {
+      font-size: 4em;
+      margin-bottom: 20px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .subtitle {
+      font-size: 1.3em;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 30px auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .price-section {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      border-radius: 15px;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .price-old {
+      font-size: 1.5em;
+      text-decoration: line-through;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+
+    .price-new {
+      font-size: 4em;
+      font-weight: 900;
+      margin: 20px 0;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .discount-badge {
+      display: inline-block;
+      background: #ff6b6b;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.3em;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(255,107,107,0.4);
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .benefit {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .benefit:hover {
+      transform: translateY(-10px);
+    }
+
+    .benefit-icon {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    .benefit-title {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+
+    .section {
+      margin: 50px 0;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      color: #667eea;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 15px;
+    }
+
+    .section-content {
+      font-size: 1.15em;
+      line-height: 1.8;
+      color: #4a5568;
+    }
+
+    .ingredients-box {
+      background: #f7fafc;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 5px solid #667eea;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .form-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 60px 40px;
+      border-radius: 20px;
+      color: white;
+      margin: 50px 0;
+    }
+
+    .form-section h2 {
+      color: white;
+      border-bottom-color: rgba(255,255,255,0.3);
+      text-align: center;
+    }
+
+    .form-subtitle {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    input {
+      width: 100%;
+      padding: 18px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1em;
+      background: white;
+      transition: box-shadow 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+    }
+
+    .terms-checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 25px 0;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      border: 2px solid rgba(255,255,255,0.2);
+    }
+
+    .terms-checkbox input[type="checkbox"] {
+      margin-top: 3px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .terms-checkbox label {
+      flex: 1;
+      font-size: 0.95em;
+      cursor: pointer;
+      line-height: 1.6;
+    }
+
+    .terms-checkbox label a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .terms-checkbox label a:hover {
+      text-decoration: underline;
+    }
+
+    .terms-error {
+      color: #ff6b6b;
+      font-size: 0.9em;
+      margin-top: 8px;
+      display: none;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.3em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(245, 87, 108, 0.4);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+      margin-top: 80px;
+    }
+
+    .brand-link {
+      color: #ffd700;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .brand-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2em; }
+      .card { padding: 30px 25px; }
+      .form-section { padding: 30px 20px; }
+      .price-new { font-size: 3em; }
+      .benefits { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="emoji-header">🚀</div>
+    <h1>Talorix Bold</h1>
+    <p class="subtitle">energía y vitalidad</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="price-section">
+        <div class="price-old">MXN $1,780</div>
+        <div class="price-new">MXN $890</div>
+        <div class="discount-badge">🔥 -50% OFF HOY</div>
+      </div>
+
+      <p class="section-content">Fórmula avanzada en gotas que combina extractos naturales para revitalizar tu energía masculina. Talorix Bold trabaja en sinergia con tu cuerpo para mejorar el desempeño, aumentar la resistencia y optimizar tu vitalidad sin químicos artificiales.</p>
+
+      <!-- Beneficios -->
+      <div class="benefits">
+        
+        <div class="benefit">
+          <div class="benefit-icon">⚡</div>
+          <div class="benefit-title">Energía Sostenida</div>
+          <div>Incrementa tu vitalidad todo el día</div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">💪</div>
+          <div class="benefit-title">Mayor Resistencia</div>
+          <div>Mejora tu rendimiento físico</div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">🧬</div>
+          <div class="benefit-title">Balance Hormonal</div>
+          <div>Optimiza niveles de testosterona</div>
+        </div>
+        
+        <div class="benefit">
+          <div class="benefit-icon">🌱</div>
+          <div class="benefit-title">Fórmula Natural</div>
+          <div>Sin químicos ni efectos adversos</div>
+        </div>
+        
+      </div>
+
+      <!-- Descripción -->
+      <div class="section">
+        <h2>🔬 ¿Qué es Talorix Bold?</h2>
+        <div class="section-content">
+          Cada gota de Talorix Bold contiene una mezcla científicamente formulada de extractos botánicos que han sido utilizados durante siglos. Los ingredientes trabajan en conjunto para mejorar la circulación, incrementar los niveles de testosterona naturalmente y proporcionar energía sostenida sin estimulantes.
+        </div>
+      </div>
+
+      <!-- Ingredientes -->
+      <div class="section">
+        <h2>🌿 Ingredientes Activos</h2>
+        <div class="ingredients-box">
+          Pulpa de bayas rojas mixtas (arándano, mora, frambuesa), extracto de saw palmetto (Serenoa repens), extracto de ortiga (Urtica dioica), extracto de semilla de calabaza (Cucurbita pepo), extracto de corteza de ciruelo africano (Pygeum africanum), zinc (como gluconato de zinc), biotina (vitamina B7)
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de Pedido -->
+    <div class="form-section">
+      <h2>🛒 Solicita Talorix Bold</h2>
+      <p class="form-subtitle">Completa el formulario y nuestro equipo te contactará para confirmar tu pedido</p>
+
+      <form id="orderForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Nombre Completo *</label>
+          <input type="text" id="name" required placeholder="Ej: Juan Pérez García">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Teléfono (con código de país) *</label>
+          <input type="tel" id="phone" required placeholder="Ej: +52 55 1234 5678">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email (opcional)</label>
+          <input type="email" id="email" placeholder="tu@email.com">
+        </div>
+
+        <div class="terms-checkbox">
+          <input type="checkbox" id="acceptTerms" required>
+          <label for="acceptTerms">
+            Acepto los <a href="https://vidaesnatura.com/terminos-y-condiciones" target="_blank">Términos y Condiciones</a> 
+            y la <a href="https://vidaesnatura.com/politica-de-privacidad" target="_blank">Política de Privacidad</a>. 
+            Autorizo el uso de mis datos para procesar mi pedido y recibir información sobre el producto. *
+          </label>
+        </div>
+        <div class="terms-error" id="termsError">
+          ⚠️ Debes aceptar los términos y condiciones para continuar
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          🚀 Solicitar Ahora
+        </button>
+
+        <p style="text-align: center; color: white; margin-top: 25px; font-size: 0.95em;">
+          🔒 Tu información está protegida y es confidencial
+        </p>
+      </form>
+    </div>
+
+    <p style="text-align: center; color: white; font-size: 1.1em;">
+      <a href="https://vidaesnatura.com" class="brand-link">🌿 Más productos en Vida es Natura</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Talorix Bold. Todos los derechos reservados.</p>
+    <p style="margin-top: 20px; font-size: 0.9em;">
+      Producto natural para potencia masculina • Disponible en México
+    </p>
+  </footer>
+
+  <script>
+    // Obtener IP del cliente
+    let clientIP = '';
+    fetch('https://api.ipify.org?format=json')
+      .then(r => r.json())
+      .then(data => clientIP = data.ip)
+      .catch(() => clientIP = 'unknown');
+
+    // Detectar plataforma y referer para tracking
+    function detectPlatform() {
+      const hostname = window.location.hostname;
+      
+      // Detectar plataforma por hostname
+      if (hostname.includes('netlify.app')) return 'netlify';
+      if (hostname.includes('github.io')) return 'github-pages';
+      if (hostname.includes('vercel.app')) return 'vercel';
+      if (hostname.includes('pages.dev')) return 'cloudflare-pages';
+      if (hostname.includes('web.app') || hostname.includes('firebaseapp.com')) return 'firebase';
+      if (hostname.includes('surge.sh')) return 'surge';
+      if (hostname.includes('render.com')) return 'render';
+      if (hostname === 'localhost' || hostname === '127.0.0.1') return 'localhost';
+      
+      return 'custom-domain';
+    }
+
+    function getTrackingData() {
+      const platform = detectPlatform();
+      const referrer = document.referrer || 'direct';
+      const currentUrl = window.location.href;
+      const utmParams = new URLSearchParams(window.location.search);
+      
+      // Construir subacc para AdCombo (max 50 chars)
+      const subacc = [
+        platform,
+        utmParams.get('utm_source') || 'organic',
+        utmParams.get('utm_campaign') || 'default'
+      ].join('_').substring(0, 50);
+      
+      return {
+        platform,
+        referrer,
+        currentUrl,
+        subacc,
+        utm_source: utmParams.get('utm_source') || null,
+        utm_medium: utmParams.get('utm_medium') || null,
+        utm_campaign: utmParams.get('utm_campaign') || null
+      };
+    }
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+
+      // Validar términos y condiciones
+      const acceptTerms = document.getElementById('acceptTerms');
+      const termsError = document.getElementById('termsError');
+      
+      if (!acceptTerms.checked) {
+        termsError.style.display = 'block';
+        acceptTerms.focus();
+        return false;
+      }
+      termsError.style.display = 'none';
+
+      // Obtener datos de tracking
+      const tracking = getTrackingData();
+      
+      const formData = {
+        name: document.getElementById('name').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        email: document.getElementById('email').value.trim() || '',
+        offer_id: '40091',
+        country_code: 'MX',
+        price: 890,
+        ip: clientIP,
+        base_url: tracking.currentUrl,
+        subacc: tracking.subacc,
+        // Datos extra para tu BD
+        platform: tracking.platform,
+        referrer: tracking.referrer,
+        utm_source: tracking.utm_source,
+        utm_medium: tracking.utm_medium,
+        utm_campaign: tracking.utm_campaign
+      };
+
+      console.log('📊 Datos de tracking:', {
+        platform: tracking.platform,
+        referrer: tracking.referrer,
+        subacc: tracking.subacc
+      });
+
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = '⏳ Procesando...';
+
+      // Detectar entorno (localhost vs producción)
+      const apiUrl = window.location.hostname === 'localhost' 
+        ? 'http://localhost:3001/api/adcombo/create-order'
+        : 'https://sitadel.xyz/api/adcombo/create-order';
+
+      try {
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (result.code === 'ok') {
+          alert(`✅ ¡Pedido Confirmado!\n\nTu pedido #${result.order_id} ha sido registrado.\nNuestro equipo te contactará pronto para confirmar la entrega.`);
+          document.getElementById('orderForm').reset();
+        } else {
+          alert(`❌ Error\n\n${result.error || 'No pudimos procesar tu pedido. Intenta nuevamente.'}`);
+        }
+      } catch (error) {
+        alert('❌ Error de conexión. Por favor intenta nuevamente.');
+      }
+
+      btn.disabled = false;
+      btn.textContent = '🚀 Solicitar Ahora';
+    }
+
+    // Tracking
+    console.log('Página cargada: tarolix-bold-mx - Plataforma: github-pages');
+    console.log('Producto: Talorix Bold');
+    console.log('Variación: energía y vitalidad');
+  </script>
+</body>
+</html>
